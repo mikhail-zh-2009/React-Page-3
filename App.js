@@ -14,9 +14,9 @@ class Button extends React.Component {
 
     render() {
         return (
-        <button id={this.props.id} className="simple-button" onClick={this.handleClick}>
-            {this.props.text}
-        </button>
+            <button id={this.props.id} className="simple-button" onClick={this.handleClick}>
+                {this.props.text}
+            </button>
         )
     }
 }
@@ -24,7 +24,9 @@ class Button extends React.Component {
 function App() {
     //Buttons that will be on page
     return <div id="main">
-        <Button id="button_1" text="Hello World!" event={function(){ document.write('Hello World!') }}/>
+        <Button id="button-1" text="File" event={ function() {} }/>
+        <Button id="button-2" text="View" event={ function() {} }/>
+        <Button id="button-3" text="Help" event={ function() {} }/>
     </div>
 }
 
